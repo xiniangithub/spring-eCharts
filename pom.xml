@@ -123,5 +123,18 @@
   </dependencies>
   <build>
     <finalName>spring-eCharts</finalName>
+    <!-- 配置资源路径 -->
+    <resources>
+      <resource>
+        <directory>src/main/resource</directory>
+      </resource>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <!-- 包含src/main/java目录下的所有xml文件-->
+          <include>**/*.xml</include>
+        </includes>
+      </resource>
+    </resources>
   </build>
 </project>
